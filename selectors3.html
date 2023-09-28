@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .rootDiv {
+        font-size: 48px;
+      }
+      .rootDiv > p {
+        color: green;
+      }
+      .rootDiv ~ span {
+        color: red;
+      }
+
+      [class] {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rootDiv">
+      <p>Абзац на втором уровне вложенности</p>
+    </div>
+
+    <div class="rootDiv">
+      <div>
+        <p>Абзац на втором уровне вложенности</p>
+      </div>
+    </div>
+
+    <span> Span идущий сразу после rootDiv </span>
+    <hr />
+
+    <span> Span идущий не сразу после rootDiv </span>
+  </body>
+</html>
